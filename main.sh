@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tepy () {
+function tepy () {
   template_path="${HOME}/.tepy/template"
   template_list=()
   if [ ! -d $template_path ]; then
@@ -25,7 +25,7 @@ tepy () {
       break
     done
   else
-    echo "Not found tempate. pls add a directory."
+    echo "Not found template. pls add a directory."
     open $template_path
   fi
 
