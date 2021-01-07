@@ -1,10 +1,10 @@
 #!/bin/bash
 
 tepy () {
-  template_path="$HOME/.tepy/template"
+  template_path="${HOME}/.tepy/template"
   template_list=()
   if [ ! -d $template_path ]; then
-    echo "Not found tempate directory."
+    echo "Not found template directory."
     mkdir $template_path
     return
   fi
