@@ -11,17 +11,17 @@ tepy will work with any recent release of Zsh or Bash.
 
 1. Clone the repository:
     ```console
-    git clone https://github.com/ivgtr/tepy.git "${HOME}/.tepy"
+    $ git clone https://github.com/ivgtr/tepy.git "${HOME}/.tepy"
     ```
 
 2. Add source tepy in `.zshrc` or `.bashrc`:
    ```sh
-   source ~/.tepy/tepy.sh
+   source "${HOME}/.tepy/tepy.sh"
    ```
 
 3. Reload `.zshrc` or `.bashrc`:
     ```console
-    source ~/.zshrc
+    $ source "${HOME}/.zshrc"
     ```
 
 
@@ -29,13 +29,13 @@ tepy will work with any recent release of Zsh or Bash.
 
 To pull the latest changes:
 ```console
-cd ~/.tepy
-git pull
+$ cd "${HOME}/.tepy"
+$ git pull
 ```
 
 ### Usage
 
-tepy will directory structure under `~/.tepy/temlate` and copy it to the current directory.
+tepy will directory structure under `"${HOME}/.tepy/temlate"` and copy it to the current directory.
 
 Start `tepy` command, select the template you want to copy.
 
@@ -43,14 +43,14 @@ example:
 ```console
 $ tepy
 1) typescript  2) react
-?# 1
+Please select a number:  1
 ```
 
 ### Add a Template
 
 We do not provide a template, so you will have to add your own.
 
-Add the template under `~/.tepy/temlate`
+Add the template under `"${HOME}/.tepy/temlate"`
 
 
 ## License
