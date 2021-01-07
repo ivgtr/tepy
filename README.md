@@ -35,7 +35,7 @@ git pull
 
 ### Usage
 
-tepy will directory structure under template and copy it to the current directory.
+tepy will directory structure under `~/.tepy/temlate` and copy it to the current directory.
 
 Start `tepy` command, select the template you want to copy.
 
